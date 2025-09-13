@@ -1,0 +1,45 @@
+[
+  {
+    "id": "exp-1",
+    "company": "TechCorp Inc.",
+    "position": "Senior Frontend Developer",
+    "duration": "2021 - Present",
+    "startDate": "2021-01-01",
+    "description": "Lead the frontend development team in building a large-scale SaaS platform. Implemented modern frontend architecture, performance optimizations, and accessibility improvements.",
+    "technologies": ["React", "TypeScript", "Next.js", "GraphQL", "Tailwind CSS"],
+    "type": "work"
+  },
+  {
+    "id": "exp-2",
+    "company": "DataViz Labs",
+    "position": "Frontend Developer",
+    "duration": "2019 - 2020",
+    "startDate": "2019-02-01",
+    "endDate": "2020-12-31",
+    "description": "Developed interactive data visualization dashboards for enterprise clients. Created reusable chart components and optimized rendering performance.",
+    "technologies": ["React", "D3.js", "Redux", "Node.js", "SCSS"],
+    "type": "work"
+  },
+  {
+    "id": "exp-3",
+    "company": "StartupX",
+    "position": "Full Stack Developer",
+    "duration": "2017 - 2019",
+    "startDate": "2017-06-01",
+    "endDate": "2019-01-31",
+    "description": "Built a marketplace platform from the ground up. Developed both frontend and backend components, implemented payment processing, and user authentication.",
+    "technologies": ["JavaScript", "React", "Node.js", "MongoDB", "AWS"],
+    "type": "work"
+  },
+  {
+    "id": "exp-4",
+    "company": "University of Technology",
+    "position": "Computer Science, BSc",
+    "duration": "2013 - 2017",
+    "startDate": "2013-09-01",
+    "endDate": "2017-05-31",
+    "description": "Graduated with first-class honors. Specialized in web development and distributed systems. Completed a thesis on real-time data processing systems.",
+    "technologies": ["Java", "Python", "Algorithms", "Data Structures", "Databases"],
+    "type": "education"
+  }
+]

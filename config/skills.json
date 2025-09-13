@@ -1,0 +1,47 @@
+[
+  {
+    "name": "React",
+    "level": 95,
+    "category": "frontend"
+  },
+  {
+    "name": "TypeScript",
+    "level": 90,
+    "category": "frontend"
+  },
+  {
+    "name": "Next.js",
+    "level": 85,
+    "category": "frontend"
+  },
+  {
+    "name": "CSS/Tailwind",
+    "level": 90,
+    "category": "frontend"
+  },
+  {
+    "name": "Node.js",
+    "level": 80,
+    "category": "backend"
+  },
+  {
+    "name": "GraphQL",
+    "level": 75,
+    "category": "backend"
+  },
+  {
+    "name": "AWS",
+    "level": 70,
+    "category": "devops"
+  },
+  {
+    "name": "Docker",
+    "level": 65,
+    "category": "devops"
+  },
+  {
+    "name": "UI/UX Design",
+    "level": 75,
+    "category": "design"
+  }
+]

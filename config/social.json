@@ -1,0 +1,22 @@
+[
+  {
+    "platform": "GitHub",
+    "url": "https://github.com/kalindafab",
+    "icon": "Github"
+  },
+  {
+    "platform": "LinkedIn",
+    "url": "https://linkedin.com/in/",
+    "icon": "Linkedin"
+  },
+  {
+    "platform": "Twitter",
+    "url": "https://twitter.com",
+    "icon": "Twitter"
+  },
+  {
+    "platform": "Dribbble",
+    "url": "https://dribbble.com",
+    "icon": "Dribbble"
+  }
+]
