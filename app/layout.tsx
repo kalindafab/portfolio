@@ -15,8 +15,12 @@ const inter = Inter({ subsets: ['latin'] });
 const personalInfo = getPersonalInfo();
 
 export const metadata: Metadata = {
-  title: `${personalInfo.name} - ${personalInfo.title}`,
+  title: `${personalInfo.name} `,
   description: personalInfo.bio,
+  icons:{
+    icon:'/prof2.png',
+    apple:'/prof2.png',
+  },
 };
 
 export default function RootLayout({

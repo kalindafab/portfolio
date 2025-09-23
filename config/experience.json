@@ -33,12 +33,12 @@
   },
   {
     "id": "exp-4",
-    "company": "University of Technology",
-    "position": "Computer Science, BSc",
-    "duration": "2013 - 2017",
-    "startDate": "2013-09-01",
-    "endDate": "2017-05-31",
-    "description": "Graduated with first-class honors. Specialized in web development and distributed systems. Completed a thesis on real-time data processing systems.",
+    "company": "Adventist University of Central Africa",
+    "position": "Software Engineering, BSc",
+    "duration": "2022 - 2026",
+    "startDate": "2022-09-01",
+    "endDate": "2026-05-31",
+    "description": "Graduated with second-class honors. Specialized in web development and distributed systems. Completed a thesis on BLockchain in capital market and Shares.",
     "technologies": ["Java", "Python", "Algorithms", "Data Structures", "Databases"],
     "type": "education"
   }

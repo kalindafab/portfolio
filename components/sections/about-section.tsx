@@ -29,7 +29,7 @@ export function AboutSection() {
           <h3 className="text-xl font-semibold mb-4">My Background</h3>
           <div className="space-y-4 text-muted-foreground">
             <p>
-              I specialize in building modern web applications using the latest technologies. My journey in web development started over 5 years ago, and I&apos;ve been passionate about creating intuitive and performant digital experiences ever since.
+              I specialize in building modern web applications using the latest technologies. My journey in web development started over 4 years ago, and I&apos;ve been passionate about creating intuitive and performant digital experiences ever since.
             </p>
             <p>
               With a strong foundation in both frontend and backend technologies, I enjoy working across the full stack. I&apos;m constantly learning and staying up to date with the latest web development trends and best practices.
