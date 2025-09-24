@@ -92,7 +92,7 @@ function ExperienceItem({ experience, index, total }: ExperienceItemProps) {
         <Card className="ml-12 transition-all hover:shadow-md">
           <CardHeader>
             <div className="absolute -left-6 top-6 h-12 w-12 rounded-full bg-primary flex items-center justify-center">
-              {experience.type === 'work' ? (
+              {experience.type === "work" ? (
                 <BriefcaseIcon className="h-6 w-6 text-primary-foreground" />
               ) : (
                 <GraduationCap className="h-6 w-6 text-primary-foreground" />
@@ -104,7 +104,31 @@ function ExperienceItem({ experience, index, total }: ExperienceItemProps) {
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <p className="text-muted-foreground mb-4">{experience.description}</p>
+            {/* Description */}
+            {experience.description && (
+              <p className="text-muted-foreground mb-4">{experience.description}</p>
+            )}
+
+            {/* Open source PR links */}
+            {experience.projects && (
+              <ul className="list-disc list-inside mb-4 space-y-1">
+                {experience.projects.map((project) => (
+                  <li key={project.pr}>
+                    {project.name} —{" "}
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary hover:underline"
+                    >
+                      {project.pr}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            )}
+
+            {/* Technologies */}
             <div className="flex flex-wrap gap-2">
               {experience.technologies.map((tech) => (
                 <Badge key={tech} variant="secondary">

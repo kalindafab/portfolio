@@ -25,6 +25,11 @@ export interface Project {
   githubUrl?: string;
   featured: boolean;
 }
+export interface ProjectContribution {
+  name: string;
+  pr: string;
+  link: string;
+}
 
 export interface Experience {
   id: string;
@@ -36,6 +41,7 @@ export interface Experience {
   description: string;
   technologies: string[];
   type: "work" | "education";
+  projects?: ProjectContribution[];
 }
 
 export interface Social {

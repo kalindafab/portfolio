@@ -1,44 +1,59 @@
 [
   {
     "id": "exp-1",
-    "company": "TechCorp Inc.",
-    "position": "Senior Frontend Developer",
-    "duration": "2021 - Present",
-    "startDate": "2021-01-01",
-    "description": "Lead the frontend development team in building a large-scale SaaS platform. Implemented modern frontend architecture, performance optimizations, and accessibility improvements.",
-    "technologies": ["React", "TypeScript", "Next.js", "GraphQL", "Tailwind CSS"],
+    "company": "Personal Projects",
+    "position": "Frontend Developer (Web3 Focus)",
+    "duration": "2024 - Present",
+    "startDate": "2024-01-01",
+    "description": "Built a decentralized borrowing protocol as a side project using Solidity and Hardhat for smart contracts. Integrated contracts into a React + TypeScript frontend with wagmi, RainbowKit, and ethers.js to enable wallet connection, deposits, borrowing, repayments, and withdrawals.",
+    "technologies": ["React", "TypeScript", "wagmi", "RainbowKit", "ethers.js", "Solidity", "Hardhat", "Tailwind CSS"],
     "type": "work"
   },
   {
     "id": "exp-2",
     "company": "DataViz Labs",
     "position": "Frontend Developer",
-    "duration": "2019 - 2020",
+    "duration": "2022 - 2023",
     "startDate": "2019-02-01",
     "endDate": "2020-12-31",
-    "description": "Developed interactive data visualization dashboards for enterprise clients. Created reusable chart components and optimized rendering performance.",
+    "description": "Developed interactive data visualization dashboards for enterprise clients. Created reusable chart components, optimized rendering performance, and collaborated with backend teams to integrate APIs.",
     "technologies": ["React", "D3.js", "Redux", "Node.js", "SCSS"],
     "type": "work"
   },
   {
     "id": "exp-3",
-    "company": "StartupX",
-    "position": "Full Stack Developer",
-    "duration": "2017 - 2019",
-    "startDate": "2017-06-01",
-    "endDate": "2019-01-31",
-    "description": "Built a marketplace platform from the ground up. Developed both frontend and backend components, implemented payment processing, and user authentication.",
-    "technologies": ["JavaScript", "React", "Node.js", "MongoDB", "AWS"],
+    "company": "Open Source Contributions",
+    "position": "Contributor",
+    "duration": "2024 - Present",
+    "description": "Contributed to widely used open-source projects by submitting pull requests:",
+    "projects": [
+      {
+        "name": "OpenRefine",
+        "pr": "PR #7025",
+        "link": "https://github.com/kalindafab/OpenRefine/tree/issue-7025-keep-matching-rows"
+      },
+      {
+        "name": "Jenkins",
+        "pr": "PR #10236",
+        "link": "https://github.com/jenkinsci/jenkins/pull/10236"
+      },
+      {
+        "name": "nDPI",
+        "pr": "PR #2957",
+        "link": "https://github.com/ntop/nDPI/pull/2957"
+      }
+    ],
+    "technologies": ["Java", "JavaScript", "C", "Open Source Collaboration"],
     "type": "work"
   },
   {
     "id": "exp-4",
     "company": "Adventist University of Central Africa",
-    "position": "Software Engineering, BSc",
-    "duration": "2022 - 2026",
+    "position": "BSc Software Engineering",
+    "duration": "2022 - 2026 (expected)",
     "startDate": "2022-09-01",
     "endDate": "2026-05-31",
-    "description": "Graduated with second-class honors. Specialized in web development and distributed systems. Completed a thesis on BLockchain in capital market and Shares.",
+    "description": "Pursuing a Bachelor's degree in Software Engineering. Focused on web development, distributed systems, and blockchain. Thesis on blockchain applications in capital markets and shares.",
     "technologies": ["Java", "Python", "Algorithms", "Data Structures", "Databases"],
     "type": "education"
   }
