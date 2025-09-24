@@ -12,6 +12,7 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, Di
 import { Github, ExternalLink, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { Project } from "@/config/types";
+import RatingWidget from "../RatingWidget";
 
 export function ProjectsSection() {
   const allProjects = getProjects();
@@ -86,6 +87,11 @@ export function ProjectsSection() {
         project={selectedProject} 
         onClose={() => setSelectedProject(null)} 
       />
+      <section className="mt-16">   
+        <div className="max-w-3xl mx-auto">
+          <RatingWidget />
+        </div>
+      </section>
     </SectionContainer>
   );
 }
@@ -97,59 +103,75 @@ interface ProjectCardProps {
 
 function ProjectCard({ project, onSelect }: ProjectCardProps) {
   return (
-    <Card className="overflow-hidden h-full flex flex-col hover:shadow-lg transition-shadow">
-      <div className="relative h-48 overflow-hidden">
-        <Image
-          src={project.imageUrl}
-          alt={project.title}
-          fill
-          style={{ objectFit: "cover" }}
-          className="transition-transform duration-500 hover:scale-105"
-        />
-      </div>
-      <CardHeader>
-        <CardTitle>{project.title}</CardTitle>
-        <CardDescription>{project.description}</CardDescription>
-      </CardHeader>
-      <CardContent className="flex-grow">
-        <div className="flex flex-wrap gap-2">
-          {project.tags.slice(0, 3).map((tag) => (
-            <Badge key={tag} variant="secondary">
-              {tag}
-            </Badge>
-          ))}
-          {project.tags.length > 3 && (
-            <Badge variant="outline">+{project.tags.length - 3}</Badge>
-          )}
+    <div className="flex flex-col gap-4">
+      <Card className="overflow-hidden h-full flex flex-col hover:shadow-lg transition-shadow">
+        <div className="relative h-48 overflow-hidden">
+          <Image
+            src={project.imageUrl}
+            alt={project.title}
+            fill
+            style={{ objectFit: "cover" }}
+            className="transition-transform duration-500 hover:scale-105"
+          />
         </div>
-      </CardContent>
-      <CardFooter className="flex justify-between">
-        <Dialog>
-          <DialogTrigger asChild>
-            <Button variant="ghost" size="sm" onClick={onSelect}>
-              Learn More <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-          </DialogTrigger>
-        </Dialog>
-        
-        <div className="flex gap-2">
-          {project.githubUrl && (
-            <Button variant="outline" size="icon" asChild>
-              <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" aria-label="GitHub Repository">
-                <Github className="h-4 w-4" />
-              </a>
-            </Button>
-          )}
-          {project.liveUrl && (
-            <Button variant="outline" size="icon" asChild>
-              <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" aria-label="Live Demo">
-                <ExternalLink className="h-4 w-4" />
-              </a>
-            </Button>
-          )}
-        </div>
-      </CardFooter>
-    </Card>
+
+        <CardHeader>
+          <CardTitle>{project.title}</CardTitle>
+          <CardDescription>{project.description}</CardDescription>
+        </CardHeader>
+
+        <CardContent className="flex-grow">
+          <div className="flex flex-wrap gap-2">
+            {project.tags.slice(0, 3).map((tag) => (
+              <Badge key={tag} variant="secondary">
+                {tag}
+              </Badge>
+            ))}
+            {project.tags.length > 3 && (
+              <Badge variant="outline">+{project.tags.length - 3}</Badge>
+            )}
+          </div>
+        </CardContent>
+
+        <CardFooter className="flex justify-between">
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button variant="ghost" size="sm" onClick={onSelect}>
+                Learn More <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </DialogTrigger>
+          </Dialog>
+
+          <div className="flex gap-2">
+            {project.githubUrl && (
+              <Button variant="outline" size="icon" asChild>
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub Repository"
+                >
+                  <Github className="h-4 w-4" />
+                </a>
+              </Button>
+            )}
+            {project.liveUrl && (
+              <Button variant="outline" size="icon" asChild>
+                <a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Live Demo"
+                >
+                  <ExternalLink className="h-4 w-4" />
+                </a>
+              </Button>
+            )}
+          </div>
+        </CardFooter>
+      </Card>
+    </div>
+    
   );
 }
 
@@ -212,7 +234,10 @@ function ProjectDialog({ project, onClose }: ProjectDialogProps) {
             </Button>
           )}
         </div>
+        
       </DialogContent>
+      
     </Dialog>
+    
   );
 }

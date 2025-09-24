@@ -8,6 +8,7 @@ import * as Icons from "lucide-react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { LucideIcon } from "lucide-react";
+import DecryptedText from "../DecryptedText";
 
 export function HeroSection() {
   const personalInfo = getPersonalInfo();
@@ -60,10 +61,19 @@ export function HeroSection() {
             </motion.div>
 
             <motion.div variants={item}>
-              <p className="text-lg md:text-xl max-w-2xl mx-auto mb-10">
-                {personalInfo.bio}
-              </p>
-            </motion.div>
+  <p className="text-lg md:text-xl max-w-2xl mx-auto mb-10">
+    <DecryptedText
+  text={personalInfo.bio} 
+  className="text-gray-900 dark:text-gray-100"          
+  encryptedClassName="text-gray-400 dark:text-gray-500" 
+  parentClassName="inline-block"
+  speed={15}
+  sequential={true}
+  revealDirection="start"
+  animateOn="view"
+/>
+  </p>
+</motion.div>
 
             <motion.div 
               variants={item}

@@ -1,6 +1,6 @@
 [
   {
-    "name": "React",
+    "name": "Svelte",
     "level": 95,
     "category": "frontend"
   },
@@ -9,24 +9,14 @@
     "level": 90,
     "category": "frontend"
   },
-  {
-    "name": "Next.js",
-    "level": 85,
-    "category": "frontend"
-  },
-  {
-    "name": "CSS/Tailwind",
-    "level": 90,
-    "category": "frontend"
+   {
+    "name": "Solidity",
+    "level": 87,
+    "category": "backend"
   },
   {
     "name": "Node.js",
     "level": 80,
-    "category": "backend"
-  },
-  {
-    "name": "GraphQL",
-    "level": 75,
     "category": "backend"
   },
   {

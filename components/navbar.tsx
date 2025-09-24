@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { getPersonalInfo } from "@/lib/config";
+import FuzzyText from "./FuzzyText";
 
 interface NavItem {
   label: string;
@@ -63,15 +64,24 @@ export function Navbar() {
       transition={{ duration: 0.3 }}
     >
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <Link href="/" className="text-xl font-bold" onClick={closeMenu}>
-          <motion.span
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
-          >
-            {personalInfo.name.split(' ')[0]}<span className="text-primary">{personalInfo.name.split(' ')[1] || ''}</span>
-          </motion.span>
-        </Link>
+        <Link href="/" onClick={closeMenu}>
+  <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ delay: 0.2 }}
+  >
+   <FuzzyText
+  baseIntensity={0.01}
+  hoverIntensity={0.1}
+  enableHover={true}
+  fontSize="2rem"        
+  fontWeight={700}       
+  color="#4F46E5"        
+>
+  {personalInfo.name.split(' ').slice(-1)[0]} 
+</FuzzyText>
+  </motion.div>
+</Link>
         
         <div className="flex items-center gap-2">
           {/* Desktop Navigation */}
