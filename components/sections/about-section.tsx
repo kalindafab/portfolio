@@ -21,24 +21,25 @@ export function AboutSection() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true, margin: "-100px" }}
-        >
-          <h3 className="text-xl font-semibold mb-4">My Background</h3>
-          <div className="space-y-4 text-muted-foreground">
-            <p>
-              I specialize in building modern web applications using the latest technologies. My journey in web development started over 4 years ago, and I&apos;ve been passionate about creating intuitive and performant digital experiences ever since.
-            </p>
-            <p>
-              With a strong foundation in both frontend and backend technologies, I enjoy working across the full stack. I&apos;m constantly learning and staying up to date with the latest web development trends and best practices.
-            </p>
-            <p>
-              When I&apos;m not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing my knowledge through blog posts and community engagement.
-            </p>
-          </div>
-        </motion.div>
+  initial={{ opacity: 0, x: -50 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.5 }}
+  viewport={{ once: true, margin: "-100px" }}
+>
+  <h3 className="text-xl font-semibold mb-4">My Background</h3>
+  <div className="space-y-4 text-muted-foreground">
+    <p>
+      I specialize in building modern web applications using the latest technologies. My journey in web development started over 4 years ago, and I&apos;ve been passionate about creating intuitive and performant digital experiences ever since.
+    </p>
+    <p>
+      With a strong foundation in both frontend and backend technologies, I enjoy working across the full stack. I&apos;m constantly learning and staying up to date with the latest web development trends and best practices.
+    </p>
+    <p>
+      When I&apos;m not coding, you can find me playing football with my friends, reading books, exploring new technologies, contributing to open-source projects, or sharing my knowledge through blog posts and community engagement.
+    </p>
+  </div>
+</motion.div>
+
 
         <div className="space-y-8">
           <motion.div

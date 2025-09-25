@@ -10,10 +10,10 @@
     "icon": "Linkedin"
   },
   {
-    "platform": "Twitter",
-    "url": "https://twitter.com",
-    "icon": "Twitter"
-  },
+  "platform": "X",
+  "url": "https://x.com",
+  "icon": "Twitter"
+},
   {
     "platform": "Dribbble",
     "url": "https://dribbble.com",

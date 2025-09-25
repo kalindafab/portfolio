@@ -15,12 +15,12 @@ import {
 
 type Option = "fire" | "mid" | "trash" | "ass" | "goat";
 
-const EMOJI: Record<Option, string> = {
-  fire: "🔥",
-  mid: "😐",
-  trash: "🗑️",
-  ass: "🍑",
-  goat: "🐐",
+const EMOJI: Record<Option, JSX.Element> = {
+  fire: <span className="text-red-500 text-2xl">🔥</span>,
+  mid: <span className="text-gray-400 text-2xl">😐</span>,
+  trash: <span className="text-green-700 text-2xl">🗑️</span>,
+  ass: <span className="text-pink-500 text-2xl">🍑</span>,
+  goat: <span className="text-purple-500 text-2xl">🐐</span>,
 };
 
 const DEFAULT_OPTIONS: Option[] = ["fire", "goat", "mid", "ass", "trash"];
