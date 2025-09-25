@@ -18,7 +18,7 @@ const styles = {
   }
 };
 
-interface DecryptedTextProps extends HTMLMotionProps<'span'> {
+interface DecryptedTextProps extends Omit<HTMLMotionProps<'span'>, 'ref'> {
   text: string;
   speed?: number;
   maxIterations?: number;
@@ -204,8 +204,13 @@ export default function DecryptedText({
       
 
   return (
-    
-    <motion.span className={parentClassName} ref={containerRef} style={styles.wrapper} {...hoverProps} {...props}>
+    <motion.span 
+      className={parentClassName} 
+      ref={containerRef} 
+      style={styles.wrapper} 
+      {...hoverProps} 
+      {...props}
+    >
       <span style={styles.srOnly}>{displayText}</span>
 
       <span aria-hidden="true">
