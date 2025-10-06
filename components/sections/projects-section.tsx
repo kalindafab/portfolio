@@ -89,7 +89,7 @@ export function ProjectsSection() {
       />
       <section className="mt-16">   
         <div className="max-w-3xl mx-auto">
-          <RatingWidget />
+          {/* <RatingWidget /> */}
         </div>
       </section>
     </SectionContainer>
